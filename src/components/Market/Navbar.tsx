@@ -1,5 +1,5 @@
 "use client"; 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../assets/log.png'
@@ -7,16 +7,25 @@ import search from '../../assets/search.png'
 import nav from '../../assets/hamburger.png'
 
 const Navbar = () => {
-    const [width, setWidth] = useState(window.innerWidth)
-    console.log(width)
-
-
-  return (
-   <>
-   {width > 768 ? <DeskNav />: <MobileNav />}
-   </>
-  )
-}
+    const [width, setWidth] = useState(0);
+  
+    useEffect(() => {
+      setWidth(window.innerWidth);
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
+    return (
+      <>
+        {width > 768 ? <DeskNav /> : <MobileNav />}
+      </>
+    );
+  };
 
 const DeskNav = () => {
 
