@@ -24,7 +24,7 @@ const Navbar = () => {
 
 const DeskNav = () => {
   return (
-    <div className="flex justify-between items-center h-[15vh] pr-[5%]">
+    <div className="flex justify-between items-center h-[15vh] ">
       <ul className="flex items-center justify-between w-[30%] ">
         <li>
           <Link href="/">
@@ -91,7 +91,7 @@ const MobileNav = () => {
          backdrop-blur-sm bg-white/30  z-50  fixed   top-[0%] left-[0%]"
         >
           <div className="pr-8"> {navDisplay()} </div>
-          <div className="grid items-center justify-center   w-full h-full ">
+          <div className="grid items-center justify-center   w-full mt-[170px] ">
             <div className=" flex flex-col gap-4 min-w-[110px] mx-auto text-center">
               <Link
                 href="/market"
