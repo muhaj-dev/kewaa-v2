@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <div className="relative">
       <div className="max-w-[80rem] mx-auto px-[5%] xl:p-0">
-        <div className="flex justify-between lg:w-[30%] ">
-          <ul className="flex flex-col justify-start h-[25vh]">
+        <div className="flex  justify-between gap-8 max-w-[300px] w-full ">
+          <ul className="flex flex-col justify-start ">
             <li className="font-[900] text-[1.3rem] lg:text-[1.0rem]">KEWAA</li>
             <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5]">
               <Link href="/another-page ">Home</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
           </ul>
 
-          <ul className="flex flex-col justify-start h-[25vh]">
+          <ul className="flex flex-col  ">
             <li className="font-[700]">ABOUT</li>
             <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] mt-[8%]">
               <Link href="/another-page ">Careers</Link>
@@ -43,11 +43,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between  my-[5%] lg:my-[0%]">
-          <Image src={footerlogo} alt="" className="h-[70px] w-[70px]" />
-          <p className="text-[#C5C5C5] text-[1.3rem] lg:text-[0.8rem]">
-            Copyright 2023
-          </p>
+        <div className="flex mt-16 flex-col lg:flex-row items-start lg:items-center justify-between  ">
+          <div className="flex gap-8 justify-between items-end max-w-[270px] w-full">
+            <div className="h-[70px] w-[70px] pt-3 ">
+              <Image src={footerlogo} alt="" />
+            </div>
+            <p className="text-[#C5C5C5] fl text-[1.3rem]  lg:text-[0.8rem]">
+              Copyright 2023
+            </p>
+          </div>
           <ul className="flex items-center justify-between relative z-[5] lg:w-[10%] w-[60%]">
             <li className="text-[0.8rem] mt-[15%]">
               <Link href="/another-page ">

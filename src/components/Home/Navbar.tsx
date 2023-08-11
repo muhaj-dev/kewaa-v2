@@ -25,7 +25,7 @@ const Navbar = () => {
 const DeskNav = () => {
   return (
     <div className="flex justify-between items-center h-[15vh] ">
-      <ul className="flex items-center justify-between w-[30%] ">
+      <ul className="flex items-center gap-10 justify-between w-[30%] ">
         <li>
           <Link href="/">
             <Image src={logo} alt="Logo" width={200} height={200} />
@@ -43,7 +43,7 @@ const DeskNav = () => {
       </ul>
       <Link
         href="/market"
-        className="bg-[#A6A8AB] text-[#3A3A3A] py-[1%] px-[1%] rounded-md"
+        className="bg-[#A6A8AB] text-[#3A3A3A] py-2 px-6 rounded-md"
       >
         Market Place
       </Link>
@@ -96,7 +96,7 @@ const MobileNav = () => {
               <Link
                 href="/market"
                 onClick={() => setToggleNavBar(false)}
-                className="bg-[#A6A8AB] text-[#3A3A3A] p-4 rounded-xl"
+                className="bg-[#A6A8AB] text-[#3A3A3A] py-2 px-6 rounded-xl"
               >
                 Market Place
               </Link>

@@ -6,8 +6,8 @@ import What from "@/components/Home/What";
 export default function HomePage() {
   return (
     <>
-      <div className=" bg-cover bg-center h-screen w-full bg px-[5%] ">
-        <div className="max-w-[80rem] mx-auto">
+      <div className="  bg ">
+        <div className="max-w-[80rem] mx-auto px-[5%]">
           <Navbar />
           <Hero />
         </div>
