@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <div className="  bg ">
-        <div className="max-w-[80rem] mx-auto px-[5%]">
+        <div className="max-w-[85rem] mx-auto px-[5%]">
           <Navbar />
           <Hero />
         </div>

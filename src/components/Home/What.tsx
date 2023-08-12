@@ -6,13 +6,13 @@ import whatbg from "../../assets/whatsvg.png";
 import lines from "../../assets/Lines.png";
 import ellipse from "../../assets/ellipse.png";
 import greenSvg from "../../assets/green.svg";
-import eco from "../../assets/ecobg.png";
+
 import EcoCard from "./EcoCard";
 
 const What = () => {
   return (
-    <div className="bg-[#03060f]  px-[5%]">
-      <div className="max-w-[80rem] mx-auto">
+    <div className="bg-[#03060f]  ">
+      <div className="max-w-[85rem] mx-auto px-[5%]">
         <div className="flex ">
           <div className="pt-[7%] mb-6 max-w-[40rem]">
             <h3 className="text-[3rem] lg:text-[2rem] font-[600] flex  lg:flex-row flex-col">

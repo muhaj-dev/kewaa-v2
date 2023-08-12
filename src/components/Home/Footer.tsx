@@ -11,7 +11,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="relative">
-      <div className="max-w-[80rem] mx-auto px-[5%] xl:p-0">
+      <div className="max-w-[85rem] mx-auto px-[5%] ">
         <div className="flex  justify-between gap-8 max-w-[300px] w-full ">
           <ul className="flex flex-col justify-start ">
             <li className="font-[900] text-[1.3rem] lg:text-[1.0rem]">KEWAA</li>
