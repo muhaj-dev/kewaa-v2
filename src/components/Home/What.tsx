@@ -11,7 +11,7 @@ import EcoCard from "./EcoCard";
 
 const What = () => {
   return (
-    <div className="bg-[#03060f]  ">
+    <div className="relative ">
       <div className="max-w-[85rem] mx-auto px-[5%]">
         <div className="flex ">
           <div className="pt-[7%] mb-6 max-w-[40rem]">
@@ -27,11 +27,13 @@ const What = () => {
               more individuals into the market.
             </p>
           </div>
+          
           <Image
             src={whatbg}
             alt=""
             className="h-[1000px] w-[1000px] absolute  right-[0%] mt-[-15%]"
           />
+ 
         </div>
         <div className="lg:flex  justify-center hidden ">
           <svg

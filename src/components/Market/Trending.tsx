@@ -3,10 +3,10 @@ import trend1 from '../../assets/trend1.png'
 import trend2 from '../../assets/trending.png'
 import progress from '../../assets/progress.png'
 import Image from 'next/image'
-
+import MarketFooterBg from "../../assets/MarketFooterBg.svg"
 const Trending = ({title}:any) => {
   return (
-    <div className='px-[5%]'>
+    <div className='px-[7.8%]'>
         <h3>{title}</h3>
 
         <div className='flex flex-col lg:flex-row justify-between md:items-center my-[5%]'>
@@ -14,14 +14,18 @@ const Trending = ({title}:any) => {
             <TrendCard src={trend1}/>
             <TrendCard src={trend1}/>
         </div>
+     
+
         
 
-    </div>
+</div>
+ 
   )
 }
 
 const TrendCard = ({src}:any) => {
     return (
+        <>
         <div className='bg-[#EEEEFF] md:w-[50%] lg:w-[22%] text-[#383838] rounded-[16px] my-[7%] lg:my-[0%] '>
             <div>
             <Image src={src} alt= '' className='h-[200px] w-[100%]' />
@@ -44,7 +48,7 @@ const TrendCard = ({src}:any) => {
                         <Image src={progress} alt= '' />
                         <p className='text-[#383838] text-[0.6rem] '>33/200</p>
                     </div>
-
+                   
                 </div>
 
             </div>
@@ -52,6 +56,9 @@ const TrendCard = ({src}:any) => {
 
 
         </div>
+     
+
+</>
     )
 }
 export default Trending

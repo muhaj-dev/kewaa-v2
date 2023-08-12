@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../assets/log.png";
+
+import logo from "../../assets/logo.svg";
 import nav from "../../assets/hamburger.png";
 
 const Navbar = () => {
@@ -28,7 +29,10 @@ const DeskNav = () => {
       <ul className="flex items-center gap-10 justify-between w-[30%] ">
         <li>
           <Link href="/">
-            <Image src={logo} alt="Logo" width={200} height={200} />
+          <div style={{ width: '200px', height: '200px' }}>
+  <Image src={logo} alt="" />
+</div>
+
           </Link>
         </li>
         <li className="text-[1rem]">

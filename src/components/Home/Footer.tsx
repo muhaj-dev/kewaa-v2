@@ -7,8 +7,17 @@ import linkedin from "../../assets/linkedin.png";
 import discord from "../../assets/discord.png";
 import github from "../../assets/github.png";
 import Image from "next/image";
+import MarketFooterBg from "../../assets/MarketFooterBg.svg"
 
-const Footer = () => {
+
+
+interface FooterProps {
+  useCustomBackground: boolean;
+}
+
+
+
+const Footer: React.FC<FooterProps> = ({ useCustomBackground }) => {
   return (
     <div className="relative">
       <div className="max-w-[85rem] mx-auto px-[5%] ">
@@ -31,13 +40,13 @@ const Footer = () => {
 
           <ul className="flex flex-col  ">
             <li className="font-[700]">ABOUT</li>
-            <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] mt-[8%]">
+            <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] ">
               <Link href="/another-page ">Careers</Link>
             </li>
-            <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] mt-[8%]">
+            <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] ">
               <Link href="/another-page">Legal Framework</Link>
             </li>
-            <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] mt-[8%]">
+            <li className="lg:text-[0.8rem] text-[1.2rem] mt-[15%] text-[#C5C5C5] ]">
               <Link href="/another-page">Terms and Conditions</Link>
             </li>
           </ul>
@@ -92,11 +101,15 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <Image
-        src={footerBg}
-        alt=""
-        className="h-[500px] w-[500px] absolute right-[0%] -bottom-10 hidden lg:block"
-      />
+      {useCustomBackground ? (
+        <div className="h-[500px] w-[500px] absolute right-[0%] -bottom-10 hidden lg:block">
+          <Image src={MarketFooterBg} alt="" />
+        </div> // Render the custom SVG background for the market page
+      ) : (
+        <div className="h-[400px] w-[500px] absolute right-[0%] -bottom-10 hidden lg:block">
+        <Image src={footerBg} alt="" /> 
+      </div>
+      )}
     </div>
   );
 };
