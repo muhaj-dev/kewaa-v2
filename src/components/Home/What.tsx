@@ -5,6 +5,7 @@ import how from "../../assets/how.png";
 import whatbg from "../../assets/whatsvg.png";
 import lines from "../../assets/Lines.png";
 import ellipse from "../../assets/ellipse.png";
+import greenSvg from "../../assets/green.svg";
 import eco from "../../assets/ecobg.png";
 import EcoCard from "./EcoCard";
 
@@ -74,11 +75,11 @@ const What = () => {
           {/* <Image src={eco} alt=""  className='h-[1000px] w-[1000px] absolute left-[0%] mt-[-25%] '/> */}
         </div>
 
-        <div className=" relative z-[5]  mt-[50%] lg:mt-[0%]">
-          <h3 className="text-[2rem]  md:text-[3.2rem] font-[600] flex  max-w-[30rem]  ">
+        <div className=" relative   mt-[50%] lg:mt-[0%]">
+          <h3 className="z-[1000] text-[2rem]  md:text-[3.2rem] font-[600] flex  max-w-[30rem]  ">
             An ecosystem of investment options powered by Kewaa
           </h3>
-          <div className="lg:text-[0.9rem] text-[1.3rem] font-[300] max-w-[53.6rem] my-[1%] text-[#C5C5C5]0">
+          <div className="lg:text-[0.9rem] z-50 text-[1.3rem] font-[300] max-w-[53.6rem] my-[1%] text-[#C5C5C5]0">
             <p className="">
               Explore the growing ecosystem of fractionalized security tokens.
             </p>
@@ -86,6 +87,9 @@ const What = () => {
               The Kewaa ecosystem is comprised of real estate, bonds, shares and
               collectables.
             </p>
+          </div>
+          <div className="w-full  lg:w-[80%] absolute  right-[10%] lg:right-[50%] -top-[150%] lg:-top-[200%] hidden sm:block">
+            <Image src={greenSvg} alt="" className=" " />
           </div>
         </div>
 
