@@ -3,6 +3,9 @@ import Navbar from '@/components/Market/Navbar'
 import Trending from '@/components/Market/Trending'
 import React from 'react'
 
+
+
+
 const page = () => {
   return (
     <div className='mx-auto'>
